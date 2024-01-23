@@ -34,6 +34,7 @@ This document provides an overview of the web services available in the project.
 ### Get All Lecturers
 
 **Method:** `GET`
+
 **Endpoint:** `/lecturers`  
 **Success Response Code:** 200 SUCCESS  
 **Consumes MIME Types:** N/A  
