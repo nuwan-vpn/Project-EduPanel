@@ -41,45 +41,61 @@ This document provides an overview of the web services available in the project.
 
 
 ### Get a Lecturer
-**Endpoint:** `GET /lecturers/{lecturer-id}`  
-**Success Response Code:** 200 SUCCESS
+**Method:** `GET` </br>
+**Endpoint:** `/lecturers/{lecturer-id}`  
+**Success Response Code:** 200 SUCCESS </br>
+**Error Response Codes:** 404 NOT FOUND </br>
+**Consumes MIME Types:** N/A  </br>
+**Produces MIME Types:** application/json
 
 ### Get Full-time Lecturers
-**Endpoint:** `GET /lecturers?type=full-time`  
+**Method:** `GET` </br>
+**Endpoint:** `/lecturers?type=full-time`  
 **Success Response Code:** 200 SUCCESS  
 **Produces MIME Types:** application/json
 
 ### Get Visiting Lecturers
-**Endpoint:** `GET /lecturers?type=visiting`  
+**Method:** `GET` </br>
+**Endpoint:** `/lecturers?type=visiting`  
 **Success Response Code:** 200 SUCCESS  
 **Produces MIME Types:** application/json
 
 ## Users
 
-### Create a User
-**Endpoint:** `POST /users`  
+### Create a new User
+**Method:** `POST` </br>
+**Endpoint:** `/users`  
 **Success Response Code:** 201 CREATED  
 **Error Response Codes:** 400 BAD REQUEST  
-**Consumes MIME Types:** application/json
+**Consumes MIME Types:** application/json </br>
+**Produces MIME Types:** application/json
+
 
 ### Update User Details
-**Endpoint:** `PATCH /users/{username}`  
+**Method:** `PATCH` </br>
+**Endpoint:** `/users/{username}`  
 **Success Response Code:** 204 NO CONTENT  
 **Error Response Codes:** 400 BAD REQUEST, 404 NOT FOUND  
 **Consumes MIME Types:** application/json
 
 ### Delete a User
-**Endpoint:** `DELETE /users/{username}`  
+**Method:** `DELETE` </br>
+**Endpoint:** `/users/{username}`  
 **Success Response Code:** 204 NO CONTENT  
 **Error Response Codes:** 404 NOT FOUND
 
 ### Get All Users
-**Endpoint:** `GET /users`  
-**Success Response Code:** 200 SUCCESS
+**Method:** `GET` </br>
+**Endpoint:** `/users`  
+**Success Response Code:** 200 SUCCESS </br>
+**Produces MIME Types:** application/json
 
 ### Log In
-**Endpoint:** `POST /users/login`  
-**Success Response Code:** 200 SUCCESS
+**Method:** `GET` </br>
+**Endpoint:** `/users/login`  
+**Success Response Code:** 200 SUCCESS </br>
+**Consumes MIME Types:** application/json </br>
+**Produces MIME Types:** application/json
 
 ---
 
