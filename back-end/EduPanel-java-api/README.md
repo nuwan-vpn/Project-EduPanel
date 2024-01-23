@@ -22,17 +22,23 @@ This document provides an overview of the web services available in the project.
 
 
 ### Delete a Lecturer
+
 **Method:** `DELETE`  
 **Endpoint:** `/lecturers/{lecturer-id}`  
 **Success Response Code:** 204 NO CONTENT  
-**Error Response Codes:** 404 NOT FOUND
-**Consumes MIME Types:** N/A
+**Error Response Codes:** 404 NOT FOUND  
+**Consumes MIME Types:** N/A  
 **Produce MIME Types:** N/A
 
+
 ### Get All Lecturers
-**Endpoint:** `GET /lecturers`  
+
+**Method:** `GET`
+**Endpoint:** `/lecturers`  
 **Success Response Code:** 200 SUCCESS  
+**Consumes MIME Types:** N/A  
 **Produces MIME Types:** application/json
+
 
 ### Get a Lecturer
 **Endpoint:** `GET /lecturers/{lecturer-id}`  
