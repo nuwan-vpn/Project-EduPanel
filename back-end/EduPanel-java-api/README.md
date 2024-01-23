@@ -17,8 +17,9 @@ This document provides an overview of the web services available in the project.
 **Endpoint:** `/lecturers/{lecturer-id}`  
 **Success Response Code:** 204 NO CONTENT  
 **Error Response Codes:** 400 BAD REQUEST, 404 NOT FOUND  
-**Consumes MIME Types:** multipart/form-data, application/json
+**Consumes MIME Types:** multipart/form-data, application/json  
 **Produce MIME Types:** N/A
+
 
 ### Delete a Lecturer
 **Method:** `DELETE`  
