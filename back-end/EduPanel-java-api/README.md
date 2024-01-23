@@ -5,12 +5,12 @@ This document provides an overview of the web services available in the project.
 ## Lecturers
 
 ### Create a new Lecturer
-**Method:**`POST`
+**Method:** `POST`  
 **Endpoint:** `/lecturers`  
 **Success Response Code:** 201 CREATED  
 **Error Response Codes:** 400 BAD REQUEST  
-**Consumes MIME Types:** multipart/form-data
-**Produce3 MIME Types:** application/json
+**Consumes MIME Types:** multipart/form-data  
+**Produce MIME Types:** application/json
 
 ### Update Lecturer Details
 **Endpoint:** `PATCH /lecturers/{lecturer-id}`  
