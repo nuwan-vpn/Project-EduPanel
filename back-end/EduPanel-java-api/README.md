@@ -13,10 +13,12 @@ This document provides an overview of the web services available in the project.
 **Produce MIME Types:** application/json
 
 ### Update Lecturer Details
-**Endpoint:** `PATCH /lecturers/{lecturer-id}`  
+**Method:** `PATCH`  
+**Endpoint:** `/lecturers/{lecturer-id}`  
 **Success Response Code:** 204 NO CONTENT  
 **Error Response Codes:** 400 BAD REQUEST, 404 NOT FOUND  
 **Consumes MIME Types:** multipart/form-data, application/json
+**Produce MIME Types:** N/A
 
 ### Delete a Lecturer
 **Endpoint:** `DELETE /lecturers/{lecturer-id}`  
