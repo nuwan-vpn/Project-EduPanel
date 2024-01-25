@@ -1,5 +1,6 @@
 package lk.ijse.dep11.edupanel;
 
+import lk.ijse.dep11.edupanel.converter.LecturerTypeConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -15,7 +16,7 @@ public class WebAppConfig implements WebMvcConfigurer {
 
     @Override
     public void addFormatters(FormatterRegistry registry) {
-        WebMvcConfigurer.super.addFormatters(registry);
+       registry.addConverter(new LecturerTypeConverter());
     }
 
     @Bean
