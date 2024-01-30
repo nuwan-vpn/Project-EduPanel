@@ -16,11 +16,13 @@ public class WebAppConfig implements WebMvcConfigurer {
 
     @Override
     public void addFormatters(FormatterRegistry registry) {
-       registry.addConverter(new LecturerTypeConverter());
+
+        registry.addConverter(new LecturerTypeConverter());
     }
 
     @Bean
     public StandardServletMultipartResolver multipartResolver(){
+
         return  new StandardServletMultipartResolver();
     }
 
