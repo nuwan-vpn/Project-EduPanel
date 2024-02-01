@@ -10,6 +10,7 @@ public enum LecturerType {
     }
 
     public String getType() {
+
         return type;
     }
 }
