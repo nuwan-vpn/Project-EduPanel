@@ -5,13 +5,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Table(name = "picture")
-public class Picture {
+public class Picture implements Serializable {
     @Id
     @OneToOne
     @JoinColumn(name = "lecturer_id", referencedColumnName = "id")
@@ -19,8 +20,5 @@ public class Picture {
     @Column(name = "picture_path", nullable = false, length = 400)
     private String picturePath;
 
-    public Picture(Lecturer lecturer, String picturePath) {
-        this.lecturer = lecturer;
-        this.picturePath = picturePath;
-    }
+
 }
